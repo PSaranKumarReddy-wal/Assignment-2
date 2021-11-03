@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d1c2ea8b80.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f6fc262b05.js" crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            overflow: hidden;
+        }
+
+        aside {
+            width: 15%;
+            padding-left: 15px;
+            float: left;
+            font-style: italic;
+            background-color: black;
+            height: 88vh;
+        }
+
+        .img {
+            width: 130px;
+        }
+
+        .container1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        .btn {
+            border: none;
+            color: rgba(177, 174, 174, 0.733);
+            padding: 12px 16px;
+            font-size: 16px;
+            cursor: pointer;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        /* Darker background on mouse-over */
+
+        .btn:hover {
+            color: white;
+        }
+
+        span {
+            margin-left: 10px;
+        }
+
+        .icon-d {
+            background-color: black;
+            border-radius: 50%;
+            margin-left: 5px;
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            align-items: center;
+        }
+
+        section {
+            background-color: rgb(211, 95, 95);
+            width: 100%;
+            height: 82vh;
+        }
+
+        header {
+            padding-top: 10px;
+            height: 8vh;
+            background-color: rgb(26, 24, 24);
+        }
+
+        .header-icons {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: 10px;
+        }
+
+        .header-main {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .butn {
+            border-radius: 30px;
+            border: 1px solid #fff;
+            font-family: monospace;
+            font-weight: 900;
+            background-color: black;
+            color: white;
+            margin-right: 15px;
+            width: 130px;
+            height: 36px;
+            font-size: 14px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            width: 178px;
+            height: 260px;
+            margin-left: 30px;
+            margin-bottom: 20px;
+            background-color: rgb(32, 31, 31);
+            
+        }
+
+        .card:hover {
+            background-color: rgb(58, 57, 57);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2)
+        }
+
+        .card-div {
+            margin-top: 20px;
+            display: flex;
+        }
+
+        .card-para p {
+            color: rgba(177, 174, 174, 0.733);
+            font-size: 12px;
+        }
+
+        .img1 {
+            width: 150px;
+        }
+
+        .container12 {
+            height: 80vh;
+            overflow: auto;
+            background-color: rgb(32, 31, 31);
+        }
+
+        .a {
+            font-size: 15px;
+            font-weight: 500;
+            color: white;
+            white-space: nowrap;
+            width: 150px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .a:hover {
+            overflow: visible;
+        }
+
+        .container-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .container-head h1 {
+            font-size: 25px;
+            color: white;
+            font-family: inherit;
+            font-weight: 500;
+        }
+
+        .container-head a {
+            color: rgb(165, 174, 182);
+            font-size: 15px;
+            font-family: inherit;
+            font-weight: 500;
+        }
+
+        footer {
+            background-color: rgb(32, 31, 31);
+            margin: 0px;
+            padding: 10px 15px;
+            height: 12vh;
+        }
+
+        footer img {
+            width: 50px;
+            height: 60px;
+        }
+
+        #current-song {
+            color: white;
+            font-size: 12px;
+            margin-bottom: 0px;
+        }
+
+        #song-para {
+            font-size: 10px;
+            color: rgba(177, 174, 174, 0.733);
+            margin-bottom: 0px;
+        }
+
+         ::-webkit-scrollbar {
+            background-color: black;
+        }
+
+         ::-webkit-scrollbar-thumb {
+            background: rgba(177, 174, 174, 0.733);
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50vw;
+        }
+
+        .action-btn {
+            color: white;
+            background-color: rgb(32, 31, 31);
+            border: none;
+            border-radius: 60%;
+        }
+
+        .footer-div {
+            width: 27vw;
+        }
+
+        .footer-div2 {
+            width: 23vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <aside>
+            <img src="https://cdn2.unrealengine.com/attachment-1200x960-e1c90f978b97.png" class="img" walt="">
+            <div class="container1">
+                <button class="btn"><i class="fa fa-home"></i> <span>Home</span> </button>
+                <button class="btn"><i class="fa fa-search"></i> <span>Search</span></button>
+                <button class="btn"><i class="fas fa-music"></i> <span>Your Library</span></button>
+
+            </div>
+
+        </aside>
+        <div>
+            <header>
+                <div class="header-main">
+                    <div class="header-icons">
+                        <div class="icon-d d-flex flex-row justify-content-center">
+                            <i class="fas fa-chevron-left" style="font-size:15px;color:white"></i>
+                        </div>
+                        <div class="icon-d d-flex flex-row justify-content-center">
+                            <i class="fas fa-chevron-right" style="font-size:15px;color:white"></i>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-end">
+                        <button class="butn">upgrade</button>
+                        <button class="butn">Login</button>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="container12">
+            <div class="container-head ml-4 mr-4">
+                <h1>Top 10 songs</h1>
+                <a href="#">SEE ALL</a>
+            </div>
+            <div class="card-div">
+
+                <div class="card">
+                    <div class="icon">
+                        <!-- <i class="fas fa-play-circle" class="font"></i> -->
+                        <img src="https://a10.gaanacdn.com/gn_img/song/z8k3y13rxo/k3ynqxQ0Wr/size_xxl_1614488967.webp" class="img1" alt="">
+                    </div>
+                    <div class="head6">
+                        <h6 class="a mt-3">Saranga dhariya.</h6>
+
+                    </div>
+                    <div class="card-para">
+                        <p>We'll help you make playlists.</p>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <!-- <i class="fas fa-play-circle" class="font"></i> -->
+                        <img src="https://a10.gaanacdn.com/gn_img/song/z8k3y13rxo/k3ynqxQ0Wr/size_xxl_1614488967.webp" class="img1" alt="">
+                    </div>
+                    <div class="head6">
+                        <h6 class="a mt-3">Saranga dhariya.</h6>
+
+                    </div>
+                    <div class="card-para">
+                        <p>We'll help you make playlists.</p>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <!-- <i class="fas fa-play-circle" class="font"></i> -->
+                        <img src="https://a10.gaanacdn.com/gn_img/song/z8k3y13rxo/k3ynqxQ0Wr/size_xxl_1614488967.webp" class="img1" alt="">
+                    </div>
+                    <div class="head6">
+                        <h6 class="a mt-3">Saranga dhariya.</h6>
+
+                    </div>
+                    <div class="card-para">
+                        <p>We'll help you make playlists.</p>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <!-- <i class="fas fa-play-circle" class="font"></i> -->
+                        <img src="https://a10.gaanacdn.com/gn_img/song/z8k3y13rxo/k3ynqxQ0Wr/size_xxl_1614488967.webp" class="img1" alt="">
+                    </div>
+                    <div class="head6">
+                        <h6 class="a mt-3">Saranga dhariya.</h6>
+
+                    </div>
+                    <div class="card-para">
+                        <p>We'll help you make playlists.</p>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <!-- <i class="fas fa-play-circle" class="font"></i> -->
+                        <img src="https://a10.gaanacdn.com/gn_img/song/z8k3y13rxo/k3ynqxQ0Wr/size_xxl_1614488967.webp" class="img1" alt="">
+                    </div>
+                    <div class="head6">
+                        <h6 class="a mt-3">Saranga dhariya.</h6>
+
+                    </div>
+                    <div class="card-para">
+                        <p>We'll help you make playlists.</p>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <!-- <i class="fas fa-play-circle" class="font"></i> -->
+                        <img src="https://a10.gaanacdn.com/gn_img/song/z8k3y13rxo/k3ynqxQ0Wr/size_xxl_1614488967.webp" class="img1" alt="">
+                    </div>
+                    <div class="head6">
+                        <h6 class="a mt-3">Saranga dhariya.</h6>
+
+                    </div>
+                    <div class="card-para">
+                        <p>We'll help you make playlists.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- secondrow -->
+            <div class="container-head ml-4 mr-4">
+                <h1>Telugu new releases</h1>
+                <a href="#">SEE ALL</a>
+            </div>
+            <div class="card-div">
+
+                <div class="card">
+                    <div class="icon">
+                        <!-- <i class="fas fa-play-circle" class="font"></i> -->
+                        <img src="https://a10.gaanacdn.com/gn_img/song/z8k3y13rxo/k3ynqxQ0Wr/size_xxl_1614488967.webp" class="img1" alt="">
+                    </div>
+                    <div class="head6">
+                        <h6 class="a mt-3">Saranga dhariya.</h6>
+
+                    </div>
+                    <div class="card-para">
+                        <p>We'll help you make playlists.</p>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <!-- <i class="fas fa-play-circle" class="font"></i> -->
+                        <img src="https://a10.gaanacdn.com/gn_img/song/z8k3y13rxo/k3ynqxQ0Wr/size_xxl_1614488967.webp" class="img1" alt="">
+                    </div>
+                    <div class="head6">
+                        <h6 class="a mt-3">Saranga dhariya.</h6>
+
+                    </div>
+                    <div class="card-para">
+                        <p>We'll help you make playlists.</p>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <!-- <i class="fas fa-play-circle" class="font"></i> -->
+                        <img src="https://a10.gaanacdn.com/gn_img/song/z8k3y13rxo/k3ynqxQ0Wr/size_xxl_1614488967.webp" class="img1" alt="">
+                    </div>
+                    <div class="head6">
+                        <h6 class="a mt-3">Saranga dhariya.</h6>
+
+                    </div>
+                    <div class="card-para">
+                        <p>We'll help you make playlists.</p>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <!-- <i class="fas fa-play-circle" class="font"></i> -->
+                        <img src="https://a10.gaanacdn.com/gn_img/song/z8k3y13rxo/k3ynqxQ0Wr/size_xxl_1614488967.webp" class="img1" alt="">
+                    </div>
+                    <div class="head6">
+                        <h6 class="a mt-3">Saranga dhariya.</h6>
+
+                    </div>
+                    <div class="card-para">
+                        <p>We'll help you make playlists.</p>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <!-- <i class="fas fa-play-circle" class="font"></i> -->
+                        <img src="https://a10.gaanacdn.com/gn_img/song/z8k3y13rxo/k3ynqxQ0Wr/size_xxl_1614488967.webp" class="img1" alt="">
+                    </div>
+                    <div class="head6">
+                        <h6 class="a mt-3">Saranga dhariya.</h6>
+
+                    </div>
+                    <div class="card-para">
+                        <p>We'll help you make playlists.</p>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <!-- <i class="fas fa-play-circle" class="font"></i> -->
+                        <img src="https://a10.gaanacdn.com/gn_img/song/z8k3y13rxo/k3ynqxQ0Wr/size_xxl_1614488967.webp" class="img1" alt="">
+                    </div>
+                    <div class="head6">
+                        <h6 class="a mt-3">Saranga dhariya.</h6>
+
+                    </div>
+                    <div class="card-para">
+                        <p>We'll help you make playlists.</p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- third row -->
+            <div class="container-head ml-4 mr-4">
+                <h1>Trending Songs</h1>
+                <a href="#">SEE ALL</a>
+            </div>
+            <div class="card-div">
+
+                <div class="card">
+                    <div class="icon">
+                        <!-- <i class="fas fa-play-circle" class="font"></i> -->
+                        <img src="https://a10.gaanacdn.com/gn_img/song/z8k3y13rxo/k3ynqxQ0Wr/size_xxl_1614488967.webp" class="img1" alt="">
+                    </div>
+                    <div class="head6">
+                        <h6 class="a mt-3">Saranga dhariya.</h6>
+
+                    </div>
+                    <div class="card-para">
+                        <p>We'll help you make playlists.</p>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <!-- <i class="fas fa-play-circle" class="font"></i> -->
+                        <img src="https://a10.gaanacdn.com/gn_img/song/z8k3y13rxo/k3ynqxQ0Wr/size_xxl_1614488967.webp" class="img1" alt="">
+                    </div>
+                    <div class="head6">
+                        <h6 class="a mt-3">Saranga dhariya.</h6>
+
+                    </div>
+                    <div class="card-para">
+                        <p>We'll help you make playlists.</p>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <!-- <i class="fas fa-play-circle" class="font"></i> -->
+                        <img src="https://a10.gaanacdn.com/gn_img/song/z8k3y13rxo/k3ynqxQ0Wr/size_xxl_1614488967.webp" class="img1" alt="">
+                    </div>
+                    <div class="head6">
+                        <h6 class="a mt-3">Saranga dhariya.</h6>
+
+                    </div>
+                    <div class="card-para">
+                        <p>We'll help you make playlists.</p>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <!-- <i class="fas fa-play-circle" class="font"></i> -->
+                        <img src="https://a10.gaanacdn.com/gn_img/song/z8k3y13rxo/k3ynqxQ0Wr/size_xxl_1614488967.webp" class="img1" alt="">
+                    </div>
+                    <div class="head6">
+                        <h6 class="a mt-3">Saranga dhariya.</h6>
+
+                    </div>
+                    <div class="card-para">
+                        <p>We'll help you make playlists.</p>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <!-- <i class="fas fa-play-circle" class="font"></i> -->
+                        <img src="https://a10.gaanacdn.com/gn_img/song/z8k3y13rxo/k3ynqxQ0Wr/size_xxl_1614488967.webp" class="img1" alt="">
+                    </div>
+                    <div class="head6">
+                        <h6 class="a mt-3">Saranga dhariya.</h6>
+
+                    </div>
+                    <div class="card-para">
+                        <p>We'll help you make playlists.</p>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="icon">
+                        <!-- <i class="fas fa-play-circle" class="font"></i> -->
+                        <img src="https://a10.gaanacdn.com/gn_img/song/z8k3y13rxo/k3ynqxQ0Wr/size_xxl_1614488967.webp" class="img1" alt="">
+                    </div>
+                    <div class="head6">
+                        <h6 class="a mt-3">Saranga dhariya.</h6>
+
+                    </div>
+                    <div class="card-para">
+                        <p>We'll help you make playlists.</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+    </main>
+    <footer>
+        <div class="d-flex flex-row">
+            <div class="d-flex flex-row footer-div">
+                <img src="https://a10.gaanacdn.com/gn_img/song/z8k3y13rxo/k3ynqxQ0Wr/size_xxl_1614488967.webp" alt="image">
+                <div class="d-flex flex-column justify-content-center ml-2">
+                    <h1 id="current-song">Saranga dhariya</h1>
+                    <p id="song-para">Devi Sri Prasad,Sid Sriram</p>
+                </div>
+                <div class="d-flex flex-row ml-3" style="align-items: center;">
+                    <i class="far fa-heart" style="font-size:15px;color:white"></i>
+                    <i class="fas fa-compress ml-2" style="font-size:15px;color:white"></i>
+                </div>
+            </div>
+            <div class="navigation">
+                <audio id="audio">
+                    <source src="" type="audio/mpeg">
+                  </audio>
+                <button id="prev" class="action-btn">
+                    <i class="fas fa-step-backward" style="font-size:15px;color:white"></i>
+                  </button>
+                <button id="play" class="action-btn action-btn-big">
+                    <i class="fas fa-play-circle" style="font-size:25px;color:white"></i>
+                  </button>
+                <button id="next" class="action-btn">
+
+                    <i class="fas fa-step-forward" style="font-size:15px;color:white"></i>
+                  </button>
+            </div>
+            <div class="footer-div2">
+                <button id="" class="action-btn">
+                    <i class="fas fa-volume-up" style="font-size:18px;color:white"></i>
+                  </button>
+
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let playin = false;
+        let play = document.getElementById('play');
+        let audio = document.getElementById('audio');
+
+        play.addEventListener('click', () => {
+            audio.src = "1.mp3";
+            if (playin) {
+                play.querySelector('i.fas').classList.remove("fa-pause-circle");
+                play.querySelector('i.fas').classList.add("fa-play-circle");
+                console.log(play.querySelector('i.fas').classList.remove("fa-pause-circle"));
+                audio.pause();
+                playin = false;
+
+            } else {
+                play.querySelector('i.fas').classList.add("fa-pause-circle");
+                play.querySelector('i.fas').classList.remove("fa-play-circle");
+                audio.play();
+                playin = true;
+
+            }
+        })
+    </script>
+</body>
+
+</html>

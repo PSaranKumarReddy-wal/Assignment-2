@@ -1,0 +1,158 @@
+.navbar-image {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+}
+
+.head{
+  font-size: 20px;
+  color: white;
+  margin-left: 0px;
+}
+
+.img-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-div{
+  display: flex;
+  height: 605px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#f037a5 -60%,#fae62d 140%);
+}
+.main-div1{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-head{
+  color: white;
+  font-weight: 900;
+  padding-bottom: 32px;
+  font-size: 70px;
+}
+
+.main-button{
+  padding:10px 10px;
+  width:200px;
+  background-color: white;
+  font-family: monospace;
+  border-radius: 20px;
+  border-width: 0px;
+}
+.image{
+  width: 200px;
+  height: 400px;
+}
+
+.font{
+  font-size: 100px;
+  background-color: white;
+
+}
+
+.card{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.icon{
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(#f037a5 -60%,#fae62d 140%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-main{
+  text-align: center;
+}
+.sub-main1{
+  height: 500px;
+  background: linear-gradient(#f037a5 -60%,#fae62d 140%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-top: 180px;
+}
+.sub-main1 h1{
+  font-weight: 700;
+}
+
+.sub-main2{
+  height: 400px;
+  padding-left: 200px;
+}
+ .head2{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
+.sub-main3{
+  height: 400px;
+  background: linear-gradient(#f037a5 -60%,#fae62d 140%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+
+}
+.head4{
+  font-size: 70px;
+}
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+
+
+.cont {
+    background-color: #0d2436;
+}
+
+.image1 {
+    width: 100px;
+}
+
+.icon-d {
+    padding: 10px;
+    background-color: #152c3e;
+    border-radius: 40px;
+
+    margin-left: 5px;
+}
+
+.para {
+    padding-top: 15px;
+    color: #5a7184;
+}
+
+.head1 {
+    font-size: 17px;
+    color: #5a7184;
+    font-family: "Roboto";
+    font-weight: 700;
+}
+
+.para1 {
+    color: #5a7184;
+    font-size: 14px;
+}
